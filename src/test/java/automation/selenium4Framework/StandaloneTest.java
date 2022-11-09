@@ -24,6 +24,7 @@ public class StandaloneTest {
 		WebDriver driver = new ChromeDriver();
 		driver.manage().timeouts().pageLoadTimeout(Duration.ofSeconds(5));
 		driver.manage().timeouts().implicitlyWait(Duration.ofSeconds(10));
+		driver.manage().window().maximize();
 		driver.get("https://rahulshettyacademy.com/client");
 		driver.findElement(By.id("userEmail")).sendKeys("naayeem@gmail.com");
 		driver.findElement(By.id("userPassword")).sendKeys("Abcd1234$");
