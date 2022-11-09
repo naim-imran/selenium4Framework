@@ -4,6 +4,7 @@ import org.openqa.selenium.By;
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.interactions.Actions;
 import org.openqa.selenium.support.ui.ExpectedConditions;
 import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
@@ -48,6 +49,28 @@ public class StandaloneTest {
 				.anyMatch(q -> q.getText().equalsIgnoreCase(expectedProductName));
 		System.out.println(match);
 		Assert.assertTrue(match);
+		
+		driver.findElement(By.cssSelector(".totalRow button")).click();
+		
+		Actions action = new Actions(driver);
+		action.sendKeys(driver.findElement(By.cssSelector("[placeholder='Select Country']")), "United States").build().perform();
+		
+		wait.until(ExpectedConditions.visibilityOfElementLocated(By.cssSelector("section.ng-star-inserted")));
+		
+		
+		List<WebElement> countryList = driver.findElements(By.cssSelector("section.ng-star-inserted"));
+		
+		
+
+		WebElement expectedCountryName = countryList.stream()
+				.filter(r -> r.findElement(By.xpath("//span[contains(text(), ' United States')]")).getText().equalsIgnoreCase("United States"))
+				.findFirst().get();
+		expectedCountryName.click();
+		
+		driver.findElement(By.cssSelector(".action__submit")).click();
+		String flag = driver.findElement(By.cssSelector(".hero-primary")).getText();
+		Assert.assertTrue(flag.equalsIgnoreCase("THANKYOU FOR THE ORDER."));
+
 		
 
 	}
