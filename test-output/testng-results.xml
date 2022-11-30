@@ -1,0 +1,141 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results ignored="0" total="6" passed="6" failed="0" skipped="0">
+  <reporter-output>
+  </reporter-output>
+  <suite started-at="2022-11-29T14:19:50 EST" name="Suite" finished-at="2022-11-29T14:20:24 EST" duration-ms="33461">
+    <groups>
+      <group name="smoke">
+        <method signature="ErrorValidationTest.logInModuleNegativeTest(java.lang.String,java.lang.String)[pri:1, instance:automation.selenium4Framework.ErrorValidationTest@7f552bd3]" name="logInModuleNegativeTest" class="automation.selenium4Framework.ErrorValidationTest"/>
+        <method signature="SubmitOrderTest.submitOrder()[pri:0, instance:automation.selenium4Framework.SubmitOrderTest@619713e5]" name="submitOrder" class="automation.selenium4Framework.SubmitOrderTest"/>
+      </group> <!-- smoke -->
+    </groups>
+    <test started-at="2022-11-29T14:19:50 EST" name="Submit order Test" finished-at="2022-11-29T14:20:05 EST" duration-ms="14525">
+      <class name="automation.selenium4Framework.SubmitOrderTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:automation.selenium4Framework.SubmitOrderTest@619713e5]" started-at="2022-11-29T14:19:50 EST" name="launchApplication" finished-at="2022-11-29T14:20:01 EST" duration-ms="10459" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="submitOrder()[pri:0, instance:automation.selenium4Framework.SubmitOrderTest@619713e5]" started-at="2022-11-29T14:20:01 EST" name="submitOrder" finished-at="2022-11-29T14:20:05 EST" duration-ms="3780" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- submitOrder -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automation.selenium4Framework.SubmitOrderTest@619713e5]" started-at="2022-11-29T14:20:05 EST" name="tearDown" finished-at="2022-11-29T14:20:05 EST" duration-ms="263" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- automation.selenium4Framework.SubmitOrderTest -->
+    </test> <!-- Submit order Test -->
+    <test started-at="2022-11-29T14:19:50 EST" name="login module Test" finished-at="2022-11-29T14:20:24 EST" duration-ms="33461">
+      <class name="automation.selenium4Framework.ErrorValidationTest">
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:automation.selenium4Framework.ErrorValidationTest@7f552bd3]" started-at="2022-11-29T14:19:50 EST" name="launchApplication" finished-at="2022-11-29T14:20:02 EST" duration-ms="11477" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="titleTest()[pri:0, instance:automation.selenium4Framework.ErrorValidationTest@7f552bd3]" started-at="2022-11-29T14:20:02 EST" name="titleTest" finished-at="2022-11-29T14:20:02 EST" duration-ms="8" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- titleTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automation.selenium4Framework.ErrorValidationTest@7f552bd3]" started-at="2022-11-29T14:20:02 EST" name="tearDown" finished-at="2022-11-29T14:20:02 EST" duration-ms="281" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:automation.selenium4Framework.ErrorValidationTest@7f552bd3]" started-at="2022-11-29T14:20:03 EST" name="launchApplication" finished-at="2022-11-29T14:20:07 EST" duration-ms="4518" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="logInModuleNegativeTest(java.lang.String,java.lang.String)[pri:1, instance:automation.selenium4Framework.ErrorValidationTest@7f552bd3]" started-at="2022-11-29T14:20:07 EST" name="logInModuleNegativeTest" data-provider="getItemName" finished-at="2022-11-29T14:20:08 EST" duration-ms="484" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hjhgakhk@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[ghjgfjkhsjk]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInModuleNegativeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automation.selenium4Framework.ErrorValidationTest@7f552bd3]" started-at="2022-11-29T14:20:08 EST" name="tearDown" finished-at="2022-11-29T14:20:08 EST" duration-ms="112" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:automation.selenium4Framework.ErrorValidationTest@7f552bd3]" started-at="2022-11-29T14:20:08 EST" name="launchApplication" finished-at="2022-11-29T14:20:12 EST" duration-ms="4367" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="logInModuleNegativeTest(java.lang.String,java.lang.String)[pri:1, instance:automation.selenium4Framework.ErrorValidationTest@7f552bd3]" started-at="2022-11-29T14:20:12 EST" name="logInModuleNegativeTest" data-provider="getItemName" finished-at="2022-11-29T14:20:13 EST" duration-ms="1011" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hghjkshpassword@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hagkh]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInModuleNegativeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automation.selenium4Framework.ErrorValidationTest@7f552bd3]" started-at="2022-11-29T14:20:13 EST" name="tearDown" finished-at="2022-11-29T14:20:13 EST" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:automation.selenium4Framework.ErrorValidationTest@7f552bd3]" started-at="2022-11-29T14:20:13 EST" name="launchApplication" finished-at="2022-11-29T14:20:17 EST" duration-ms="4220" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="logInModuleNegativeTest(java.lang.String,java.lang.String)[pri:1, instance:automation.selenium4Framework.ErrorValidationTest@7f552bd3]" started-at="2022-11-29T14:20:17 EST" name="logInModuleNegativeTest" data-provider="getItemName" finished-at="2022-11-29T14:20:18 EST" duration-ms="992" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hghjkshord@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[hfkdjshf]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInModuleNegativeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automation.selenium4Framework.ErrorValidationTest@7f552bd3]" started-at="2022-11-29T14:20:18 EST" name="tearDown" finished-at="2022-11-29T14:20:19 EST" duration-ms="115" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method is-config="true" signature="launchApplication()[pri:0, instance:automation.selenium4Framework.ErrorValidationTest@7f552bd3]" started-at="2022-11-29T14:20:19 EST" name="launchApplication" finished-at="2022-11-29T14:20:23 EST" duration-ms="4276" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchApplication -->
+        <test-method signature="logInModuleNegativeTest(java.lang.String,java.lang.String)[pri:1, instance:automation.selenium4Framework.ErrorValidationTest@7f552bd3]" started-at="2022-11-29T14:20:23 EST" name="logInModuleNegativeTest" data-provider="getItemName" finished-at="2022-11-29T14:20:24 EST" duration-ms="984" status="PASS">
+          <params>
+            <param index="0">
+              <value>
+                <![CDATA[hghjksord@gmail.com]]>
+              </value>
+            </param>
+            <param index="1">
+              <value>
+                <![CDATA[dfgd]]>
+              </value>
+            </param>
+          </params>
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- logInModuleNegativeTest -->
+        <test-method is-config="true" signature="tearDown()[pri:0, instance:automation.selenium4Framework.ErrorValidationTest@7f552bd3]" started-at="2022-11-29T14:20:24 EST" name="tearDown" finished-at="2022-11-29T14:20:24 EST" duration-ms="111" status="PASS">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- automation.selenium4Framework.ErrorValidationTest -->
+    </test> <!-- login module Test -->
+  </suite> <!-- Suite -->
+</testng-results>

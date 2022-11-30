@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" parallel="tests" name="Submit order Test(failed)">
+    <classes>
+      <class name="automation.selenium4Framework.SubmitOrderTest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="tearDown"/>
+          <include name="submitOrder"/>
+        </methods>
+      </class> <!-- automation.selenium4Framework.SubmitOrderTest -->
+    </classes>
+  </test> <!-- Submit order Test(failed) -->
+</suite> <!-- Failed suite [Suite] -->
