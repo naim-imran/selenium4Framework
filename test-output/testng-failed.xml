@@ -1,15 +1,19 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
 <suite parallel="tests" name="Failed suite [Suite]" guice-stage="DEVELOPMENT">
-  <test thread-count="5" parallel="tests" name="Submit order Test(failed)">
+  <listeners>
+    <listener class-name="testListeners.Listeners"/>
+  </listeners>
+  <test thread-count="5" parallel="tests" name="login module Test(failed)">
     <classes>
-      <class name="automation.selenium4Framework.SubmitOrderTest">
+      <class name="automation.selenium4Framework.ErrorValidationTest">
         <methods>
+          <include name="titleTest"/>
           <include name="launchApplication"/>
+          <include name="logInModuleNegativeTest" invocation-numbers="3 3"/>
           <include name="tearDown"/>
-          <include name="submitOrder"/>
         </methods>
-      </class> <!-- automation.selenium4Framework.SubmitOrderTest -->
+      </class> <!-- automation.selenium4Framework.ErrorValidationTest -->
     </classes>
-  </test> <!-- Submit order Test(failed) -->
+  </test> <!-- login module Test(failed) -->
 </suite> <!-- Failed suite [Suite] -->
