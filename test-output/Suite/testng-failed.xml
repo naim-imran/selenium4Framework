@@ -4,13 +4,24 @@
   <listeners>
     <listener class-name="testListeners.Listeners"/>
   </listeners>
+  <test thread-count="5" parallel="tests" name="Submit order Test(failed)">
+    <classes>
+      <class name="automation.selenium4Framework.SubmitOrderTest">
+        <methods>
+          <include name="launchApplication"/>
+          <include name="submitOrder"/>
+          <include name="tearDown"/>
+        </methods>
+      </class> <!-- automation.selenium4Framework.SubmitOrderTest -->
+    </classes>
+  </test> <!-- Submit order Test(failed) -->
   <test thread-count="5" parallel="tests" name="login module Test(failed)">
     <classes>
       <class name="automation.selenium4Framework.ErrorValidationTest">
         <methods>
           <include name="titleTest"/>
           <include name="launchApplication"/>
-          <include name="logInModuleNegativeTest" invocation-numbers="3 3"/>
+          <include name="logInModuleNegativeTest"/>
           <include name="tearDown"/>
         </methods>
       </class> <!-- automation.selenium4Framework.ErrorValidationTest -->
