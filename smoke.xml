@@ -18,6 +18,10 @@
 		<classes>
 			<class name="automation.selenium4Framework.SubmitOrderTest" />
 		</classes>
+		
+		
+		
+		
 	</test>
 
 </suite> 
