@@ -131,7 +131,11 @@
 			</plugins>
 		</pluginManagement>
 		
+<<<<<<< HEAD
 			<!-- <plugins>
+=======
+	<!--	<plugins>
+>>>>>>> 10f05f0c5135af2755f40abfa69affc2c70a3260
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-compiler-plugin</artifactId>
@@ -140,7 +144,11 @@
 					<target>8</target>
 				</configuration>
 			</plugin>
+<<<<<<< HEAD
 		</plugins>-->
+=======
+		</plugins>  -->
+>>>>>>> 10f05f0c5135af2755f40abfa69affc2c70a3260
 		
 	</build>
 </project>

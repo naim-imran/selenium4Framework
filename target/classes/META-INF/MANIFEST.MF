@@ -1,5 +1,10 @@
 Manifest-Version: 1.0
+<<<<<<< HEAD
 Built-By: IMRAN
 Build-Jdk: 17.0.5
+=======
+Built-By: naayeem
+Build-Jdk: 17.0.4.1
+>>>>>>> 10f05f0c5135af2755f40abfa69affc2c70a3260
 Created-By: Maven Integration for Eclipse
 
