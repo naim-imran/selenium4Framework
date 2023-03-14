@@ -37,22 +37,17 @@ public class SetupBrowser {
 		String browserName = properties.getProperty("browser");
 
 		if (browserName.equalsIgnoreCase("chrome")) {
-<<<<<<< HEAD
-			
+		
 			ChromeOptions co = new ChromeOptions();
 			co.addArguments("--remote-allow-origins=*");
-			
-=======
-			ChromeOptions co = new ChromeOptions();
-			co.addArguments("--remote-allow-origins=*");
->>>>>>> branch 'master' of https://github.com/naim-imran/selenium4Framework.git
+
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(co);
-<<<<<<< HEAD
+
 			
 			////////////////////////////////////////////////////
-=======
->>>>>>> branch 'master' of https://github.com/naim-imran/selenium4Framework.git
+
+
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
