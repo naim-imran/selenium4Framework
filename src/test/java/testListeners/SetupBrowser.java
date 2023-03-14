@@ -43,6 +43,8 @@ public class SetupBrowser {
 			
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(co);
+			
+			////////////////////////////////////////////////////
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
