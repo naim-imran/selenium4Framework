@@ -36,8 +36,10 @@ public class SetupBrowser {
 		String browserName = properties.getProperty("browser");
 
 		if (browserName.equalsIgnoreCase("chrome")) {
+			ChromeOptions co = new ChromeOptions();
+			co.addArguments("--remote-allow-origins=*");
 			WebDriverManager.chromedriver().setup();
-			driver = new ChromeDriver();
+			driver = new ChromeDriver(co);
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
 			driver = new FirefoxDriver();
