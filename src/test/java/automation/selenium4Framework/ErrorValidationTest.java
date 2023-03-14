@@ -19,7 +19,7 @@ public class ErrorValidationTest extends SetupBrowser{
 
 	@Test(priority = 0)
 	public void titleTest() {
-		Assert.assertEquals("Let's Sho", getLandingPage().getTitle());
+		Assert.assertEquals("Let's Shop", getLandingPage().getTitle());
 
 	}
 

@@ -6,8 +6,8 @@
       <class name="automation.selenium4Framework.ErrorValidationTest">
         <methods>
           <include name="launchApplication"/>
+          <include name="logInModuleNegativeTest" invocation-numbers="0 0"/>
           <include name="tearDown"/>
-          <include name="logInModuleNegativeTest"/>
         </methods>
       </class> <!-- automation.selenium4Framework.ErrorValidationTest -->
     </classes>

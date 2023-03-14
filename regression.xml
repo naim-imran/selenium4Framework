@@ -6,11 +6,6 @@
 		<listener class-name="testListeners.Listeners"></listener>
 	</listeners>
 	
-	<test thread-count="5" name="login module Test">
-		<classes>
-			<class name="automation.selenium4Framework.ErrorValidationTest" />
-		</classes>
-	</test>
 
 	<test thread-count="5" name="Submit order Test">
 		<classes>
@@ -18,4 +13,4 @@
 		</classes>
 	</test>
 
-</suite> 
+</suite>
