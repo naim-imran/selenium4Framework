@@ -7,7 +7,6 @@ import pageObjects.Cart;
 import pageObjects.HomePage;
 import pageObjects.OrderConfirmationPage;
 import pageObjects.OrderPage;
-import testListeners.SetupBrowser;
 
 public class StandaloneTest extends SetupBrowser {
 
@@ -31,7 +30,7 @@ public class StandaloneTest extends SetupBrowser {
 		 * driver.findElement(By.id("login")).click();
 		 */
 		
-		getScreenShoot(expectedProductName, driver);
+		getScreenShoot(expectedProductName, initializeBrowser());
 		HomePage homePage = getLandingPage().login("naayeem@gmail.com", "Abcd1234$");
 
 		/*

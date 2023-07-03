@@ -1,4 +1,4 @@
-package testListeners;
+package automation.selenium4Framework;
 
 import java.io.File;
 import java.io.FileInputStream;
@@ -20,12 +20,12 @@ import io.github.bonigarcia.wdm.WebDriverManager;
 import pageObjects.LandingPage;
 
 public class SetupBrowser {
-	
-	public WebDriver driver;
+
+	private WebDriver driver;
 	private Properties properties;
 	private LandingPage landingPage;
 
-	public WebDriver initializeBrowser() {
+	public SetupBrowser() {
 		properties = new Properties();
 		try {
 			properties.load(new FileInputStream(
@@ -33,20 +33,26 @@ public class SetupBrowser {
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
+	}
+
+	public Properties getProps() {
+		return properties;
+	}
+
+	public WebDriver initializeBrowser() {
+		
 
 		String browserName = properties.getProperty("browser");
 
 		if (browserName.equalsIgnoreCase("chrome")) {
-		
+
 			ChromeOptions co = new ChromeOptions();
 			co.addArguments("--remote-allow-origins=*");
 
 			WebDriverManager.chromedriver().setup();
 			driver = new ChromeDriver(co);
 
-			
 			////////////////////////////////////////////////////
-
 
 		} else if (browserName.equalsIgnoreCase("firefox")) {
 			WebDriverManager.firefoxdriver().setup();
@@ -59,14 +65,14 @@ public class SetupBrowser {
 
 		return driver;
 	}
-	
+
 	public static String getScreenShoot(String testCaseName, WebDriver driver) {
-		TakesScreenshot screenshot = (TakesScreenshot)driver;
+		TakesScreenshot screenshot = (TakesScreenshot) driver;
 		File source = screenshot.getScreenshotAs(OutputType.FILE);
-		File file = new File(System.getProperty("user.dir")+ "//reports//"+ testCaseName + ".png");
+		File file = new File(System.getProperty("user.dir") + "//reports//" + testCaseName + ".png");
 		try {
 			FileUtils.copyFile(source, file);
-			
+
 		} catch (IOException e) {
 			e.printStackTrace();
 		}
@@ -89,7 +95,5 @@ public class SetupBrowser {
 	public LandingPage getLandingPage() {
 		return landingPage;
 	}
-	
-	
 
 }

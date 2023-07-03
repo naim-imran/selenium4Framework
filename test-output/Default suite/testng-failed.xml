@@ -3,13 +3,13 @@
 <suite name="Failed suite [Default suite]" guice-stage="DEVELOPMENT">
   <test thread-count="5" name="Default test(failed)">
     <classes>
-      <class name="automation.selenium4Framework.ErrorValidationTest">
+      <class name="automation.selenium4Framework.SubmitOrderTest">
         <methods>
           <include name="launchApplication"/>
-          <include name="logInModuleNegativeTest" invocation-numbers="0 0"/>
           <include name="tearDown"/>
+          <include name="submitOrder"/>
         </methods>
-      </class> <!-- automation.selenium4Framework.ErrorValidationTest -->
+      </class> <!-- automation.selenium4Framework.SubmitOrderTest -->
     </classes>
   </test> <!-- Default test(failed) -->
 </suite> <!-- Failed suite [Default suite] -->

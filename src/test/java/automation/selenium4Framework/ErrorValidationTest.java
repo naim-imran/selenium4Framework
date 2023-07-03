@@ -4,11 +4,9 @@ import org.testng.Assert;
 import org.testng.annotations.DataProvider;
 import org.testng.annotations.Test;
 
-import testListeners.SetupBrowser;
-
 public class ErrorValidationTest extends SetupBrowser{
 
-	@Test(priority = 1, groups = { "smoke" },retryAnalyzer = testListeners.Retry.class , dataProvider = "getItemName")
+	@Test(description = "validate the working of login module", priority = 1, groups = { "smoke" }, retryAnalyzer = testListeners.Retry.class , dataProvider = "getItemName")
 	public void logInModuleNegativeTest(String email, String password) {
 
 		getLandingPage().login(email, password);
@@ -25,7 +23,7 @@ public class ErrorValidationTest extends SetupBrowser{
 
 	@DataProvider
 	public Object[][] getItemName() {
-		Reuseables reuseables = new Reuseables(driver);
+		Reuseables reuseables = new Reuseables(initializeBrowser());
 		return reuseables.getTestData("loginData",
 				System.getProperty("user.dir") + "//src//main//java//data//loginData.xlsx");
 

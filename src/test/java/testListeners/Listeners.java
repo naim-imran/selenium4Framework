@@ -9,6 +9,7 @@ import com.aventstack.extentreports.ExtentReports;
 import com.aventstack.extentreports.ExtentTest;
 import com.aventstack.extentreports.Status;
 
+import automation.selenium4Framework.SetupBrowser;
 import automation.selenium4Framework.TestReports;
 
 public class Listeners extends SetupBrowser implements ITestListener{
@@ -35,7 +36,7 @@ public class Listeners extends SetupBrowser implements ITestListener{
 	public void onTestFailure(ITestResult result) {
 		String methodName = result.getMethod().getMethodName();
 		threadLocalTest.get().fail(result.getThrowable());
-		
+		WebDriver	driver = null;
 		
 		
 		try {
